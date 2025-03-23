@@ -20,8 +20,9 @@ jobs:
       visibility: private
       runner-map: |
         {
+          "aarch64-darwin": "macos-latest",
           "x86_64-linux": "buntu1"
         }
       enable-ssh-agent: true
     secrets:
-      ssh-private-key: ${{ secrets.FH }}
+      ssh-private-key: ${{ secrets.SS }}
