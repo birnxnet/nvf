@@ -20,5 +20,6 @@ jobs:
       visibility: private
       runner-map: |
         {
-          "aarch64-darwin": "macos-latest"
+          "aarch64-darwin": "macos-latest",
+          "x86_64-linux": "buntu1"
         }
