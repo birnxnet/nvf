@@ -25,4 +25,4 @@ jobs:
         }
       enable-ssh-agent: true
     secrets:
-      ssh-private-key: ${{ secrets.SS }}
+      ssh-private-key: ${{ secrets.FH }}
