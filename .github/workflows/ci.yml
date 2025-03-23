@@ -23,6 +23,3 @@ jobs:
           "aarch64-darwin": "macos-latest",
           "x86_64-linux": "buntu1"
         }
-      enable-ssh-agent: true
-    secrets:
-      ssh-private-key: ${{ secrets.ssh }}
