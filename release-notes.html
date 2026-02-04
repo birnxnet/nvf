@@ -1840,6 +1840,12 @@ settings (nvf's <a class="option-reference" href="options.html#option-vim-keymap
 </ul>
 </li>
 </ul>
+<p><a href="https://github.com/snoweuph">Snoweuph</a></p>
+<ul>
+<li>Fix <code>vim.assistant.codecompanion-nvim.setupOpts.display.diff.provider</code> to only
+allow valid options. <code>default</code> is no longer valid. <code>inline</code> and <code>split</code> are
+two new valid options.</li>
+</ul>
 <h2 id="sec-release-0-9-changelog">Changelog</h2>
 <p><a href="https://github.com/taylrfnt">taylrfnt</a></p>
 <ul>
@@ -1984,12 +1990,27 @@ formatter.</p>
 <li>
 <p>Added XML syntax highlighting, LSP support and formatting</p>
 </li>
+<li>
+<p>Added <a href="https://keats.github.io/tera/">tera</a> language support (syntax
+highlighting only).</p>
+</li>
+<li>
+<p>Added <a href="https://golangci-lint.run/"><code>golangci-lint</code></a> for more diagnostics.</p>
+</li>
+<li>
+<p>Added Makefile support via <code>languages.make</code>.</p>
+</li>
 </ul>
 <p><a href="https://github.com/vagahbond">vagahbond</a>: [codewindow.nvim]:
 <a href="https://github.com/gorbit99/codewindow.nvim">https://github.com/gorbit99/codewindow.nvim</a></p>
 <ul>
 <li>Add [codewindow.nvim] plugin in <code>vim.assistant.codewindow</code> with <code>enable</code> and
 <code>setupOpts</code></li>
+</ul>
+<p><a href="https://github.com/irobot">irobot</a>:</p>
+<ul>
+<li>Fix non-functional <code>vim.keymaps.*.noremap</code>. Now, setting it to false is
+equivalent to <code>:lua vim.keymap.set(..., { remap = true })</code></li>
 </ul>
 <!-- vim: set textwidth=80: -->
 </body></html></main>
